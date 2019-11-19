@@ -1,0 +1,47 @@
+.page-catalog__title{
+    margin-top: 0;
+    text-align: center;
+    font-size: 27px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #f1f1f1;
+}
+@media (min-width: 768px){
+    .page-catalog__title{
+        justify-content: center;
+        flex-basis: 100%;
+        margin-bottom: 75px;
+        padding-bottom: 95px;
+        font-size: 43px;
+    }
+    .main-nav__catalog-list{
+        background: #f1f1f1;
+    }
+    .main-nav--catalog-bg{
+        background: #f1f1f1;
+    }
+    .page-catalog__title::after{
+        content: "";
+        position: absolute;
+        bottom: 70px;
+        display: block;
+        height: 24px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/SVG/tablet-top-zig.svg");
+        background-repeat: repeat-x;
+        background-size: 772px 100%;
+    }
+}
+@media (min-width: 1250px){
+    .main-nav__catalog-list{
+        background: #ffffff;
+    }
+    
+    .page-catalog__title{
+        font-size: 53px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+}

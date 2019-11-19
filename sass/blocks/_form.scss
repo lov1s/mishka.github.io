@@ -1,0 +1,292 @@
+.main-form__wrapper{
+    margin: 0 30px;
+}
+.main-form__text{
+    font-size: 13px;
+    color: #444444;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.field__form{
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.form__left{
+    position: relative;
+    font-size: 17px;
+    color: #62d1ba;
+    margin-bottom: 25px;
+    width: 100%;
+    font-weight: bold;
+}
+.form__left::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    right: 10px;
+    
+    height: 1px;
+    border-bottom: 1px solid #62d1ba;
+}
+.radio-container{
+    display: block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+}
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border: 2px solid #454545;
+    border-radius: 50%;
+}
+.radio-container:hover input ~ .checkmark-radio {
+    border-color: #62d1ba;
+}
+.radio-container:active input ~ .checkmark-radio {
+    opacity: 0.3;
+}
+.checkmark-radio::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio-container input:checked ~ .checkmark-radio::after {
+    display: block;
+}
+.radio-container .checkmark-radio::after {
+    top: 9px;
+   left: 9px;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background: #62d1ba;
+}
+
+.check-boxes__form{
+    display: block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 65px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    font-weight: bold;
+}
+.check-boxes__form input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border: 2px solid #444444;
+}
+.checkmark:hover{
+    border-color: #62d1ba;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.check-boxes__form input:checked ~ .checkmark:after {
+    display: block;
+}
+.check-boxes__form .checkmark:after {
+    left: 13px;
+    top: 8px;
+    width: 6px;
+    height: 15px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.field__name{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text], input[type=number], input[type=email]{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    padding-left: 0;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background: #ffffff;
+    resize: vertical;
+}
+input[type=text]:hover, input[type=number]:hover, input[type=email]:hover{
+    border-color: #62d1ba;
+}
+input[type=text]:active, input[type=number]:active, input[type=email]:active{
+    border-color: #62d1ba;
+}
+
+textarea{
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    resize: vertical;
+    font: inherit;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 18px;
+}
+textarea:hover{
+    border-color: #62d1ba;
+}
+textarea:active{
+    border-color: #62d1ba;
+}
+.required-fields{
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 30px;
+}
+.send__form{
+    padding: 15px 40px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+#form__phone{
+    background-image: url("../img/SVG/phone.svg");
+    background-size: 25px;
+    background-position: right;
+    background-color: rgba(241, 241, 241, 0.3);
+    background-repeat: no-repeat;
+
+}
+#form__email{
+    background-image: url("../img/SVG/mail.svg");
+    background-size: 25px;
+    background-position: right;
+    background-color: rgba(241, 241, 241, 0.3);
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px){
+    .main-form__wrapper{
+        margin: 0;
+    }
+    .main-form__text{
+        font-size: 17px;
+        line-height: 30px;
+        margin: 0 50px;
+        margin-bottom: 20px;
+    }
+    .form__left::after{
+       display: none;
+    }
+    .field__form{
+        margin: 0 0 20px;
+    }
+    .form__wrapper{
+        display: flex;
+        margin: 0 50px;
+        margin-top: 50px;  
+        margin-bottom: 20px;
+    }
+    .form__left{
+        width: 25%;
+    }
+    .form__right{
+        width: 70%;
+    }
+    .field__form--grey{
+        background: #f1f1f1;
+    }
+    .form__checkbox{
+        display: flex;
+        flex-wrap: wrap;
+        width: 480px;
+    }
+    .check-boxes__form{
+        box-sizing: border-box;
+        margin-right: 20px;
+        width: 205px;
+    }
+    .form__user-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form__name{
+        width: 20%;
+    }
+    .form__input{
+        width: 70%;
+    }
+    input[type=text], input[type=number], input[type=email]{
+        margin-top: -10px;
+        padding-left: 15px;
+    }
+    .form__number{
+        display: flex;
+        flex-basis: 100%;
+    }
+    .form__email{
+        display: flex;
+        flex-basis: 100%;
+    }
+    input[type=number], input[type=email]{
+        background: #f1f1f1;
+    }
+    .bottom__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px 50px;
+    }
+    .send__form{
+        order: -1;
+        margin: 0;
+    }
+}
+@media (min-width: 1250px){
+    .main-form__text{
+        margin: 0 220px;
+    }
+    .form__wrapper{
+        margin: 0 100px;
+        margin-top: 50px;  
+        margin-bottom: 20px;
+    }
+    .form__left{
+        width: 11%;
+    }
+    .form__checkbox{
+        width: 750px;
+    }
+    .bottom__wrapper{
+        margin: 0 220px 50px;
+    }
+}
+  

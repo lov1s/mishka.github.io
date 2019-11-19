@@ -1,0 +1,343 @@
+.page-main__wrapper{  
+    min-height: 373px;
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-color: rgba(52, 79, 136, 0.4);
+    //box-shadow: inset 0 0 0 4px #003cff;
+}
+
+.page-main__title{
+    width: 260px;
+    padding: 75px 30px;
+    padding-bottom: 120px;
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    color: #010000;
+}
+.product{
+    margin-top: -75px;
+}
+.product__list{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.product__item--interior{
+    background-color: #63d1bb;
+}
+.product__item--toy{
+    background-color: #56c3b2;
+}
+.product_link{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    
+    padding: 30px;
+
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+.product_link--lamp::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 23px; 
+    bottom: 0;
+    right: 30px;
+    width: 41px;
+    height: 62px;
+    background: url("../img/SVG/lamp.svg") no-repeat;
+    
+}
+.product_link--toy::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 23px; 
+    bottom: 0;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/SVG/toy.svg") no-repeat;
+  
+}
+.product_link p{
+    padding: 0;
+    margin: 0;
+    width: 130px;
+}
+.product_link:hover{
+    margin-top: -5px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+.product_link:active{
+    opacity: 0.3;
+}
+@media (min-width: 768px){
+    .page-main__wrapper{
+        min-height: 746px;
+        background-image: url("../img/hero-tablet.jpg");
+    }
+    .product{
+        background-color: #f9f9f9;
+    }
+    .page-main__title{
+        width: 500px;
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .product__list{
+        width: 668px;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .product_link{
+        width: 334px;
+        font-size: 20px;
+        line-height: 30px;
+    } 
+}
+
+.product-week::after{
+    content: "";
+    display: block;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/SVG/mobile-zig.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 100%;
+}
+.product-week__title{
+    font-size: 25px;
+}
+.product-week__about{
+    font-size: 17px;
+    color: #63d1bb;
+    font-weight: 700;
+}
+.product-week__wrapper{
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+.product-week__text-wrap{
+    margin-bottom: 30px;
+}
+.product-week__text{
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+}
+.product-week__table{
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #444444;
+}
+.product-week__row{
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+.product-week__row td{
+    padding: 7px 0 10px;
+}
+.product-week__info{
+    margin-bottom: 25px;
+}
+.product-week__link{
+    margin: 0 auto;
+}
+.product-week__price{
+    display: inline-block;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #444444;
+}
+.main-btn{
+    display: block;
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    width: 260px;
+    padding: 15px 80px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #444444;
+    border: 2px solid #444444;
+    cursor: pointer;
+}
+.main-btn:hover{
+    background: #444444;
+    color: #ffffff;
+}
+.main-btn:active{
+    background: #444444;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.main-btn span:active{
+    opacity: 0.3;
+}
+@media (min-width: 768px) {
+    .product{
+        position: relative;
+    }
+    .product::after{
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        display: block;
+        height: 24px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/SVG/tablet-top-zig.svg");
+        background-repeat: repeat-x;
+        background-size: 772px 100%;
+    }
+    .product-week__wrapper{
+        width: auto;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+    .product-week__content{
+        position: relative;
+        display: flex;
+    }
+    .product-week{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 668px;
+        padding-bottom: 50px;
+    }
+    .product-week::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: block;
+        height: 17px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/SVG/tablet-zig.svg");
+        background-repeat: repeat-x;
+        background-size: 772px 100%;
+    }
+    .product-week__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+    }
+    .product-week__text-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .product-week__about{ 
+        margin-right: 25px;
+        width: 80px;
+    }
+    .product-week__title{
+        width: 500px;
+        font-size: 43px;
+    }
+    
+    .product-week__table{ 
+        margin-top: -120px;
+    }
+    .product-week__link{
+        width: 334px;
+    }
+    .product-week__info{
+        margin-right: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-week__photo{
+        flex-shrink: 0;
+        width: 333px;
+    }
+    .product-week-price__wrap{
+        position: absolute;
+        bottom: 13px;
+    }
+    .product-week__price{
+        font-size: 20px;
+    }
+    .product-week__add-cart{
+        width: 100%;
+    }
+}
+@media (min-width: 1250px){
+    .product-week__wrapper{
+        position: relative;
+        width: 1050px;
+        padding: 0 100px;
+    }
+    .product-week__text-wrap{
+        position: absolute;
+        width: auto;
+        margin-top: 130px;
+        z-index: 1;
+    }
+    .product__list{
+        width: 1050px;
+    }
+    .product_link{
+        width: 525px;
+    }
+    .product-week__title{
+        width: 600px;
+        margin: 0;
+        margin-left: 40px;
+        font-size: 53px;
+    }
+    .product-week__about{
+        order: -1;
+        margin-right: 0;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .product-week__content{
+        padding-top: 70px;
+        padding-left: 175px;
+    }
+    .product-week__text{
+        padding-top: 150px;
+        width: 300px;
+    }
+    .product-week__table{
+        width: 300px;
+    }
+    .product-week__photo{
+        width: 525px;
+    }
+}
